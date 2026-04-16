@@ -33,7 +33,6 @@ My research interests span a spectrum of **world models**, **multi-modality cont
 
 
 # 🔥 News
-- *2026.01*: Started research internship at **Advanced Micro Devices (AMD)** working on efficient generative models.
 - *2026.01*: One paper accepted to **ICLR 2026** (oral presentation).
 - *2026.01*: One paper accepted to **EACL 2026** (main conference).
 - *2025.07*: One paper accepted to **EMNLP 2025** (oral presentation).
