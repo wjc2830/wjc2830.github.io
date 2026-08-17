@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Juncheng Wang"
-description              : "world models, multi-modality content generation"
+description              : "Video foundation models, agentic generative systems, and multimodal content generation"
 repository               : "wjc2830/JunchengWang.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Juncheng Wang"
   avatar           : "images/avatar.jpg"
-  bio              : "Ph.D. Candidate @ PolyU"
+  bio              : "Video Foundation Model Researcher"
   location         : "Hong Kong"
   employer         :
   pubmed           : 
@@ -43,7 +43,7 @@ author:
   instagram        :
   impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : # e.g., "linkedin username"
+  linkedin         : "juncheng-wang-85b449325"
   dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
   orcid            : # e.g., "https://orcid.org/xxxx"
   pinterest        :
