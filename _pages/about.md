@@ -14,7 +14,7 @@ redirect_from:
       <p class="academic-eyebrow">Video Foundation Model Researcher</p>
       <h1>Juncheng Wang</h1>
       <p class="academic-hero__lead">I work on video foundation models, with a focus on large-scale training, agentic generation, and multimodal evaluation.</p>
-      <p class="academic-hero__statement">I am interested in generative systems that improve not only their outputs, but the way they generate.</p>
+      <p class="academic-hero__statement">Scaling decides how well a model renders. It cannot decide what was never specified.</p>
       <p class="academic-hero__current">Currently researching next-generation video foundation models at <strong>Tencent Hunyuan</strong>. Previously at <strong>AMD</strong> and <strong>Alibaba Wan</strong>.</p>
       <nav class="academic-links" aria-label="Profile links">
         <a href="mailto:wjc2830@gmail.com">Email</a>
@@ -27,6 +27,127 @@ redirect_from:
       <figcaption>Ph.D. Candidate, The Hong Kong Polytechnic University</figcaption>
     </figure>
   </header>
+
+  <section class="academic-section academic-roadmap" id="roadmap" aria-labelledby="roadmap-title">
+    <header class="academic-section__heading">
+      <h2 id="roadmap-title">A Roadmap for Video Generation</h2>
+      <p>Where the conditioning comes from — and who is responsible for writing it.</p>
+    </header>
+
+    <div class="academic-roadmap__intro">
+      <p class="academic-roadmap__thesis">Scaling decides how well a model <em>renders</em>.<br>It cannot decide what was never <em>specified</em>.</p>
+      <p class="academic-roadmap__lead">A prompt is a lossy description of a physical scene &mdash; on VideoPhy-2 even the best models clear only <span class="rm-stat">about a third</span> of joint physical accuracy. More compute sharpens the renderer; it cannot recover what the prompt never contained. So the thing that keeps moving is <strong>the conditioning, and who writes it</strong>.</p>
+    </div>
+
+    <ol class="academic-roadmap__levels">
+      <li class="academic-level" id="level-1" data-level="1">
+        <div class="academic-level__aside">
+          <p class="academic-level__tag"><span class="academic-level__num">L1</span>Text condition</p>
+          <p class="academic-level__who">written by <span>a human</span></p>
+        </div>
+        <div class="academic-level__body">
+          <h3>Say it</h3>
+          <p class="academic-level__sub">The prompt is the whole contract.</p>
+          <p>One sentence has to specify a long, coherent, high-rate signal, and all of that difficulty lands on the decoder. <span class="rm-work">Siren</span> spreads the load across residual codebooks instead of asking one model to carry all twelve.</p>
+          <ul class="academic-level__papers">
+            <li>
+              <h4>Language Model Based Text-to-Audio Generation: Anti-Causally Aligned Collaborative Residual Transformers</h4>
+              <p><span class="academic-level__role">Architecture</span>EMNLP 2025 &#183; first author</p>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="academic-level" id="level-2" data-level="2">
+        <div class="academic-level__aside">
+          <p class="academic-level__tag"><span class="academic-level__num">L2</span>Reference condition</p>
+          <p class="academic-level__who">written by <span>a human, in pixels</span></p>
+        </div>
+        <div class="academic-level__body">
+          <h3>Show it</h3>
+          <p class="academic-level__sub">Point at what language cannot describe.</p>
+          <p>Layout, timing, identity &mdash; easier to show than to say, so conditioning turns structural. <span class="rm-work">DenseControl</span> places every individual in a dense crowd; <span class="rm-work">MelQCD</span> takes the condition from another modality entirely. Precision rises, and a human still has to supply the reference.</p>
+          <ul class="academic-level__papers">
+            <li>
+              <h4>DenseControl: Instance-Level Controllable Synthesis of Dense Crowd Image</h4>
+              <p><span class="academic-level__role">Spatial control</span>IEEE TMM 2026 &#183; first author</p>
+            </li>
+            <li>
+              <h4>Synchronized Video-to-Audio Generation via Mel Quantization-Continuum Decomposition</h4>
+              <p><span class="academic-level__role">Cross-modal control</span>CVPR 2025 &#183; first author</p>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="academic-level" id="level-3" data-level="3">
+        <div class="academic-level__aside">
+          <p class="academic-level__tag"><span class="academic-level__num">L3</span>Searched condition</p>
+          <p class="academic-level__who">written by <span>search, at inference</span></p>
+        </div>
+        <div class="academic-level__body">
+          <h3>Find it</h3>
+          <p class="academic-level__sub">Buy the missing half with test-time compute.</p>
+          <p>If the specification is incomplete, go looking for the rest. <span class="rm-ext">Gen-Searcher</span> retrieves external evidence before it draws; my own work spends the budget internally &mdash; <span class="rm-work">Guided by the Plan</span> steers decoding to stay faithful to a plan, <span class="rm-work">Think Before You Move</span> reasons in latent motion space before the first pose. The ceiling rises while the weights stay put.</p>
+          <ul class="academic-level__papers">
+            <li>
+              <h4>Guided by the Plan: Enhancing Faithful Autoregressive Text-to-Audio Generation with Guided Decoding</h4>
+              <p><span class="academic-level__role">Steered decoding</span>EACL 2026 &#183; first author</p>
+            </li>
+            <li>
+              <h4>Think Before You Move: Latent Motion Reasoning for Text-to-Motion Generation</h4>
+              <p><span class="academic-level__role">Latent reasoning</span>TPAMI, major revision &#183; co-first author</p>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="academic-level" id="level-4" data-level="4">
+        <div class="academic-level__aside">
+          <p class="academic-level__tag"><span class="academic-level__num">L4</span>Composed condition</p>
+          <p class="academic-level__who">written by <span>a fixed pipeline</span></p>
+        </div>
+        <div class="academic-level__body">
+          <h3>Arrange it</h3>
+          <p class="academic-level__sub">Orchestration becomes a component.</p>
+          <p>Once text, images, audio and clips all condition one model, arrangement is the bottleneck &mdash; <span class="rm-ext">MiniMax H3</span> promotes it to its own module. But a loop cannot close on a metric it does not have: <span class="rm-work">Beyond Time Shifts</span> turns an omni-LLM into a reference-free critic for audio-visual quality and sync.</p>
+          <ul class="academic-level__papers">
+            <li>
+              <h4>Beyond Time Shifts: Adapting Omni-LLM as a Reference-Free Evaluator for Generative Audio-Visual Models</h4>
+              <p><span class="academic-level__role">The verifier</span>ECCV 2026 &#183; co-first author</p>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="academic-level academic-level--ours" id="level-5" data-level="5">
+        <div class="academic-level__aside">
+          <p class="academic-level__tag"><span class="academic-level__num">L5</span>Self-improving condition</p>
+          <p class="academic-level__who">written by <span>a trained planner</span></p>
+        </div>
+        <div class="academic-level__body">
+          <h3>Learn to arrange it</h3>
+          <p class="academic-level__sub">Give the orchestrator a gradient.</p>
+          <p><span class="rm-work">NEWTON</span> demotes generation to one action in an agent&rsquo;s toolbox: a planner orchestrates physics-aware tools, a verifier closes the loop for re-planning. Only the planner trains &mdash; VideoPhy-2 joint accuracy <span class="rm-stat">21.4&#8202;&rarr;&#8202;29.7</span> on LTX-Video and <span class="rm-stat">30.7&#8202;&rarr;&#8202;37.4</span> on Veo-3.1, with both generators untouched. <span class="rm-work">ROC-Agent</span> runs the same loop one level up, on research itself. What improves is the harness, not the weights.</p>
+          <ul class="academic-level__papers">
+            <li>
+              <h4>NEWTON: Agentic Planning for Physically Grounded Video Generation</h4>
+              <p><span class="academic-level__role">Trainable orchestration</span>Preprint, under review &#183; co-first author</p>
+            </li>
+            <li>
+              <h4>ROC-Agent: Research Orchestration via Cyclic Agents for Autonomous Deep Learning Experimentation</h4>
+              <p><span class="academic-level__role">The loop, one level up</span>Under review &#183; first author</p>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ol>
+
+    <div class="academic-roadmap__closing">
+      <p class="academic-roadmap__closing-lead">The next level gives the weights back what the harness learned.</p>
+      <p>Levels 1&#8211;4 changed who writes the conditioning; L5 made that writer trainable. What is missing is internalization &mdash; folding verified harness improvements back into the generator, until the model no longer needs the scaffolding. That is where I am working now, and I would happily be argued out of it. <a href="mailto:wjc2830@gmail.com">Get in touch</a>.</p>
+    </div>
+  </section>
 
   <section class="academic-section" id="research" aria-labelledby="research-title">
     <header class="academic-section__heading">
@@ -219,6 +340,7 @@ redirect_from:
           if (window.jQuery) window.jQuery('a').off('click.smoothscroll');
         });
       }
+
       var video = document.querySelector('.academic-project--newton video');
       if (!video || !('IntersectionObserver' in window) || reduceMotion) return;
       var observer = new IntersectionObserver(function (entries) {

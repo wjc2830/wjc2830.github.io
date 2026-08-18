@@ -1,5 +1,8 @@
 # Main navigation
 main:
+  - title: "Roadmap"
+    url: "/#roadmap"
+
   - title: "Research"
     url: "/#research"
 
