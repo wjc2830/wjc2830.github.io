@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: ""
-excerpt: "Video foundation model researcher working on generation, planning, and multimodal evaluation."
+excerpt: "Video foundation model researcher building self-evolving agentic systems, multimodal evaluation, and efficient video-audio generation."
 author_profile: false
 redirect_from:
   - /about/
@@ -13,7 +13,7 @@ redirect_from:
     <div class="academic-hero__copy">
       <p class="academic-eyebrow">Video Foundation Model Researcher</p>
       <h1>Juncheng Wang</h1>
-      <p class="academic-hero__lead">I work on video foundation models, with a focus on large-scale training, agentic generation, and multimodal evaluation.</p>
+      <p class="academic-hero__lead">I build self-evolving agentic systems that treat generators as callable tools inside plan&ndash;execute&ndash;verify loops, with the planner trained by reinforcement learning on critic feedback &mdash; test-time scaling for generative media: scale the workflow, not the generator.</p>
       <p class="academic-hero__statement">Scaling decides how well a model renders. It cannot decide what was never specified.</p>
       <p class="academic-hero__current">Currently researching next-generation video foundation models at <strong>Tencent Hunyuan</strong>. Previously at <strong>AMD</strong> and <strong>Alibaba Wan</strong>.</p>
       <nav class="academic-links" aria-label="Profile links">
@@ -96,7 +96,7 @@ redirect_from:
             </li>
             <li>
               <h4>Think Before You Move: Latent Motion Reasoning for Text-to-Motion Generation</h4>
-              <p><span class="academic-level__role">Latent reasoning</span>TPAMI, major revision &#183; co-first author</p>
+              <p><span class="academic-level__role">Latent reasoning</span>IEEE TPAMI 2026 &#183; co-first author</p>
             </li>
           </ul>
         </div>
@@ -132,11 +132,11 @@ redirect_from:
           <ul class="academic-level__papers">
             <li>
               <h4>NEWTON: Agentic Planning for Physically Grounded Video Generation</h4>
-              <p><span class="academic-level__role">Trainable orchestration</span>Preprint, under review &#183; co-first author</p>
+              <p><span class="academic-level__role">Trainable orchestration</span>Under review at ICLR 2027 &#183; co-first author</p>
             </li>
             <li>
               <h4>ROC-Agent: Research Orchestration via Cyclic Agents for Autonomous Deep Learning Experimentation</h4>
-              <p><span class="academic-level__role">The loop, one level up</span>Under review &#183; first author</p>
+              <p><span class="academic-level__role">The loop, one level up</span>Under review at ICLR 2027 &#183; first author</p>
             </li>
           </ul>
         </div>
@@ -164,7 +164,7 @@ redirect_from:
           <figcaption>NEWTON: planning, tool use, generation, and verification in one loop.</figcaption>
         </figure>
         <div class="academic-project__content">
-          <p class="academic-project__meta">Agentic video generation · Preprint, under review · Co-first author</p>
+          <p class="academic-project__meta">Agentic video generation · Under review at ICLR 2027 · Co-first author</p>
           <h3>NEWTON: Agentic Planning for Physically Grounded Video Generation</h3>
           <p>A plan–execute–verify system that treats video generation as one action inside a larger workflow, orchestrating physics-aware tools and critic feedback.</p>
           <p class="academic-project__links">
@@ -223,6 +223,32 @@ redirect_from:
     </div>
   </section>
 
+  <section class="academic-section" id="education" aria-labelledby="education-title">
+    <header class="academic-section__heading">
+      <h2 id="education-title">Education</h2>
+    </header>
+
+    <div class="academic-experience__list">
+      <article class="academic-experience__item">
+        <p class="academic-experience__date">2024.01 — 2027.08 (expected)</p>
+        <div>
+          <h3>The Hong Kong Polytechnic University</h3>
+          <p class="academic-experience__role">Ph.D. Student</p>
+          <p>Thesis: Clone Your Instance: Towards Omni-Modality Creation of Digital Twins with Real-Time Interactions.</p>
+          <p class="academic-experience__mentor">Advisor: Prof. Emma, Shujun Wang</p>
+        </div>
+      </article>
+
+      <article class="academic-experience__item">
+        <p class="academic-experience__date">2018.09 — 2022.06</p>
+        <div>
+          <h3>Northwestern Polytechnical University</h3>
+          <p class="academic-experience__role">B.Sc. in the School of Automation</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
   <section class="academic-section" id="experience" aria-labelledby="experience-title">
     <header class="academic-section__heading">
       <h2 id="experience-title">Industry Experience</h2>
@@ -269,28 +295,28 @@ redirect_from:
 
     <ol class="academic-publication-list">
       <li class="academic-publication">
-        <div class="academic-publication__meta"><span>Under review</span></div>
-        <div class="academic-publication__body"><h3>SphereFlow: Missing Modality Imputation via Geometric Transport on Hypersphere</h3><p><strong>Juncheng Wang</strong> et al.</p></div>
+        <div class="academic-publication__meta"><span>Under review at ICLR 2027</span></div>
+        <div class="academic-publication__body"><h3>NEWTON: Agentic Planning for Physically Grounded Video Generation</h3><p>Yuxiang Feng†, <strong>Juncheng Wang†</strong>, Chao Xu, et al.</p><p class="academic-publication__links"><a href="https://arxiv.org/abs/2605.18396" target="_blank" rel="noopener noreferrer">Paper</a></p></div>
       </li>
       <li class="academic-publication">
-        <div class="academic-publication__meta"><span>Under review</span></div>
+        <div class="academic-publication__meta"><span>Under review at ICLR 2027</span></div>
         <div class="academic-publication__body"><h3>ROC-Agent: Research Orchestration via Cyclic Agents for Autonomous Deep Learning Experimentation</h3><p><strong>Juncheng Wang</strong> et al.</p></div>
       </li>
       <li class="academic-publication">
-        <div class="academic-publication__meta"><span>ECCV 2026</span></div>
-        <div class="academic-publication__body"><h3>Beyond Time Shifts: Adapting Omni-LLM as a Reference-Free Evaluator for Generative Audio-Visual Models</h3><p>Yijie Qian*†, <strong>Juncheng Wang†</strong>, Chao Xu, et al.</p><p class="academic-publication__links"><a href="https://arxiv.org/abs/2607.09091" target="_blank" rel="noopener noreferrer">Paper</a></p></div>
+        <div class="academic-publication__meta"><span>IEEE TPAMI 2026</span></div>
+        <div class="academic-publication__body"><h3>Think Before You Move: Latent Motion Reasoning for Text-to-Motion Generation</h3><p><strong>Juncheng Wang</strong>†, Yijie Qian*†, Yuxiang Feng*, Chao Xu, et al.</p><p class="academic-publication__links"><a href="https://arxiv.org/abs/2512.24100" target="_blank" rel="noopener noreferrer">Paper</a></p></div>
+      </li>
+      <li class="academic-publication">
+        <div class="academic-publication__meta"><span>NeurIPS 2026</span></div>
+        <div class="academic-publication__body"><h3>SphereFlow: Missing Modality Imputation via Geometric Transport on Hypersphere</h3><p><strong>Juncheng Wang</strong>†, Huihan Wang†, Yuxiang Feng*, et al.</p></div>
       </li>
       <li class="academic-publication">
         <div class="academic-publication__meta"><span>ECCV 2026</span></div>
-        <div class="academic-publication__body"><h3>Progression as Latent Drift: Generative Forecasting of Slow-Evolving Pathologies</h3><p>Yuxiang Feng*†, <strong>Juncheng Wang†</strong>, Chao Xu, et al.</p><p class="academic-publication__links"><a href="https://arxiv.org/abs/2607.08270" target="_blank" rel="noopener noreferrer">Paper</a></p></div>
+        <div class="academic-publication__body"><h3>Beyond Time Shifts: Adapting Omni-LLM as a Reference-Free Evaluator for Generative Audio-Visual Models</h3><p><strong>Juncheng Wang</strong>†, Yijie Qian*†, Chao Xu, et al.</p><p class="academic-publication__links"><a href="https://arxiv.org/abs/2607.09091" target="_blank" rel="noopener noreferrer">Paper</a></p></div>
       </li>
       <li class="academic-publication">
-        <div class="academic-publication__meta"><span>IEEE TMM 2026</span></div>
-        <div class="academic-publication__body"><h3>DenseControl: Instance-Level Controllable Synthesis of Dense Crowd Image</h3><p><strong>Juncheng Wang</strong>, Lei Shang, Wang Lu, Baigui Sun, and Shujun Wang.</p><p class="academic-publication__links"><a href="https://arxiv.org/abs/2606.15592" target="_blank" rel="noopener noreferrer">Paper</a></p></div>
-      </li>
-      <li class="academic-publication">
-        <div class="academic-publication__meta"><span>Preprint</span></div>
-        <div class="academic-publication__body"><h3>NEWTON: Agentic Planning for Physically Grounded Video Generation</h3><p>Yuxiang Feng†, <strong>Juncheng Wang†</strong>, Chao Xu, et al.</p><p class="academic-publication__links"><a href="https://arxiv.org/abs/2605.18396" target="_blank" rel="noopener noreferrer">Paper</a></p></div>
+        <div class="academic-publication__meta"><span>ECCV 2026</span></div>
+        <div class="academic-publication__body"><h3>Progression as Latent Drift: Generative Forecasting of Slow-Evolving Pathologies</h3><p><strong>Juncheng Wang</strong>†, Yuxiang Feng*†, Chao Xu, et al.</p><p class="academic-publication__links"><a href="https://arxiv.org/abs/2607.08270" target="_blank" rel="noopener noreferrer">Paper</a></p></div>
       </li>
       <li class="academic-publication">
         <div class="academic-publication__meta"><span>ICLR 2026 Oral</span></div>
@@ -301,14 +327,6 @@ redirect_from:
         <div class="academic-publication__body"><h3>Guided by the Plan: Enhancing Faithful Autoregressive Text-to-Audio Generation with Guided Decoding</h3><p><strong>Juncheng Wang</strong>, Zhe Hu, Chao Xu, Siyue Ren, Yuxiang Feng, Yang Liu, Baigui Sun, and Shujun Wang.</p><p class="academic-publication__links"><a href="https://arxiv.org/abs/2601.14304" target="_blank" rel="noopener noreferrer">Paper</a></p></div>
       </li>
       <li class="academic-publication">
-        <div class="academic-publication__meta"><span>IJCV 2026</span></div>
-        <div class="academic-publication__body"><h3>Exploring Scale Shift in Crowd Localization under the Context of Domain Generalization</h3><p><strong>Juncheng Wang</strong>, Lei Shang, Ziqi Liu, Wang Lu, Xixu Hu, Zhe Hu, Jindong Wang, and Shujun Wang.</p><p class="academic-publication__links"><a href="https://arxiv.org/abs/2510.19330" target="_blank" rel="noopener noreferrer">Paper</a></p></div>
-      </li>
-      <li class="academic-publication">
-        <div class="academic-publication__meta"><span>TPAMI major revision</span></div>
-        <div class="academic-publication__body"><h3>Think Before You Move: Latent Motion Reasoning for Text-to-Motion Generation</h3><p>Yijie Qian†, <strong>Juncheng Wang†</strong>, Yuxiang Feng, Chao Xu, et al.</p><p class="academic-publication__links"><a href="https://arxiv.org/abs/2512.24100" target="_blank" rel="noopener noreferrer">Paper</a></p></div>
-      </li>
-      <li class="academic-publication">
         <div class="academic-publication__meta"><span>EMNLP 2025 Oral</span></div>
         <div class="academic-publication__body"><h3>Language Model Based Text-to-Audio Generation: Anti-Causally Aligned Collaborative Residual Transformers</h3><p><strong>Juncheng Wang</strong>, Chao Xu, Cheng Yu, Zhe Hu, Haoyu Xie, Guoqi Yu, Lei Shang, and Shujun Wang.</p><p class="academic-publication__links"><a href="https://aclanthology.org/2025.emnlp-main.1322/" target="_blank" rel="noopener noreferrer">Paper</a></p></div>
       </li>
@@ -317,10 +335,50 @@ redirect_from:
         <div class="academic-publication__body"><h3>Synchronized Video-to-Audio Generation via Mel Quantization-Continuum Decomposition</h3><p><strong>Juncheng Wang</strong>, Chao Xu, Cheng Yu, Lei Shang, Zhe Hu, Shujun Wang, and Liefeng Bo.</p><p class="academic-publication__links"><a href="https://openaccess.thecvf.com/content/CVPR2025/html/Wang_Synchronized_Video-to-Audio_Generation_via_Mel_Quantization-Continuum_Decomposition_CVPR_2025_paper.html" target="_blank" rel="noopener noreferrer">Paper</a></p></div>
       </li>
       <li class="academic-publication">
-        <div class="academic-publication__meta"><span>IEEE TIP 2023</span></div>
+        <div class="academic-publication__meta"><span>IEEE TMM</span></div>
+        <div class="academic-publication__body"><h3>DenseControl: Instance-Level Controllable Synthesis of Dense Crowd Image</h3><p><strong>Juncheng Wang</strong>, Lei Shang, Wang Lu, Baigui Sun, and Shujun Wang.</p><p class="academic-publication__links"><a href="https://arxiv.org/abs/2606.15592" target="_blank" rel="noopener noreferrer">Paper</a></p></div>
+      </li>
+      <li class="academic-publication">
+        <div class="academic-publication__meta"><span>IJCV</span></div>
+        <div class="academic-publication__body"><h3>Exploring Scale Shift in Crowd Localization under the Context of Domain Generalization</h3><p><strong>Juncheng Wang</strong>, Lei Shang, Ziqi Liu, Wang Lu, Xixu Hu, Zhe Hu, Jindong Wang, and Shujun Wang.</p><p class="academic-publication__links"><a href="https://arxiv.org/abs/2510.19330" target="_blank" rel="noopener noreferrer">Paper</a></p></div>
+      </li>
+      <li class="academic-publication">
+        <div class="academic-publication__meta"><span>IEEE TIP</span></div>
         <div class="academic-publication__body"><h3>Crowd Localization from Gaussian Mixture Scoped Knowledge and Scoped Teacher</h3><p><strong>Juncheng Wang</strong>, Junyu Gao, Yuan Yuan, and Qi Wang.</p><p class="academic-publication__links"><a href="https://arxiv.org/abs/2206.05717" target="_blank" rel="noopener noreferrer">Paper</a></p></div>
       </li>
     </ol>
+  </section>
+
+  <section class="academic-section" id="awards" aria-labelledby="awards-title">
+    <header class="academic-section__heading">
+      <h2 id="awards-title">Selected Awards &amp; Honors</h2>
+    </header>
+
+    <div class="academic-experience__list">
+      <article class="academic-experience__item">
+        <p class="academic-experience__date">2022</p>
+        <div>
+          <h3>NWPU Excellent Bachelor Thesis</h3>
+          <p>Selected 2 out of 239.</p>
+        </div>
+      </article>
+
+      <article class="academic-experience__item">
+        <p class="academic-experience__date">2021</p>
+        <div>
+          <h3>Chinese National Scholarship</h3>
+          <p>Rank 2 out of 239, as a year-3 undergraduate student.</p>
+        </div>
+      </article>
+
+      <article class="academic-experience__item">
+        <p class="academic-experience__date">2021</p>
+        <div>
+          <h3>China Robot Contest</h3>
+          <p>First prize, national level.</p>
+        </div>
+      </article>
+    </div>
   </section>
 
   <footer class="academic-footer">
