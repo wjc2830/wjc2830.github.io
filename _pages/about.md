@@ -230,7 +230,7 @@ redirect_from:
 
     <div class="academic-experience__list">
       <article class="academic-experience__item">
-        <p class="academic-experience__date">2024.01 — 2027.08 (expected)</p>
+        <p class="academic-experience__date">2024.01 — 2027.08</p>
         <div>
           <h3>The Hong Kong Polytechnic University</h3>
           <p class="academic-experience__role">Ph.D. Student</p>
